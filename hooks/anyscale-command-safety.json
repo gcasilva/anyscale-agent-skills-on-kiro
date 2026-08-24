@@ -1,0 +1,16 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Anyscale command safety",
+      "description": "Replicates the Anyscale agent-skills PreToolUse screen for Kiro. Delegates to the Anyscale-managed hooks/main.sh denylist (recursive rm, dd, mkfs, curl|bash, destructive aws/gcloud/az/kubectl/helm/eksctl/anyscale commands, non-read-only terraform) and blocks the shell tool with exit 2 when it matches. Fails open if the Anyscale hook is not installed.",
+      "trigger": "PreToolUse",
+      "matcher": "execute_bash|execute_cmd|shell",
+      "timeout": 10,
+      "action": {
+        "type": "command",
+        "command": "bash \"${KIRO_HOME:-$HOME/.kiro}/hooks/anyscale-command-safety.sh\""
+      }
+    }
+  ]
+}
