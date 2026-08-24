@@ -1,6 +1,6 @@
 # Using Anyscale Agent Skills in Kiro
 
-**[Anyscale agent skills](https://docs.anyscale.com/agent-skills/install)** are agent instructions that guide AI coding assistants through requirements gathering, code generation from validated templates, and deployment through the Anyscale CLI. 
+**[Anyscale agent skills](https://docs.anyscale.com/agent-skills)** are agent instructions that guide AI coding assistants through requirements gathering, code generation from validated templates, and deployment through the Anyscale CLI. 
 
 [Kiro](https://kiro.dev/) is an AI-powered IDE built by AWS that uses spec-driven workflow, steering, and hooks to guide development from idea to implementation. It supports agent skills through its `~/.kiro/skills/` directory and provides a hooks system (`~/.kiro/hooks/`) for pre- and post-tool-use safety checks — making it a natural fit for Anyscale's skill-based workflows.
 
