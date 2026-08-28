@@ -8,7 +8,7 @@
 
 ## Prerequisites
 
-1. **[Kiro](https://kiro.dev/)**  installed and configured (`~/.kiro/` directory exists)
+1. **[Kiro](https://kiro.dev/)** minimum v1 installed or Kiro CLi v3 and configured (`~/.kiro/` directory exists)
 2. **Anyscale CLI** installed and authenticated:```bash pip install -U anyscale anyscale login
 3. **jq** or **python3** available on your PATH (required by the safety hook)
 
